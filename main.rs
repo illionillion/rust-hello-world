@@ -19,8 +19,25 @@ fn main() {
     println!("He is {} years old.", age);
 
     if age >= 20 {
-        println!("{}歳は成人です。", age)
+        println!("{}歳は成人です。", age);
     } else {
-        println!("{}歳は未成年です。", age)
+        println!("{}歳は未成年です。", age);
     }
+
+    // ループ
+    for i in 0..5 {
+        println!("i= {}", i);
+    }
+
+    // 配列？
+    let fruits = vec!["apple", "orange", "banana"];  
+    // forで出力
+    // イテレーター
+    for fruit in fruits.iter() {  
+        println!("{}", fruit);  
+    }
+    // 何が違う？
+    for fruit in fruits {  
+        println!("{}", fruit);  
+    }  
 }
